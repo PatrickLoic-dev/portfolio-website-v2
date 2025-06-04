@@ -25,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden">
+      <body className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden bg-black">
         <Header />
         {children}
         {isVisible && <Footer />}
