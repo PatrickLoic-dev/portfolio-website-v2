@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Footer() {
     return (
-        <footer className="w-full h-fit bg-[#141414] px-[30px] pt-6 pb-8 flex flex-col md:w-screen md:px-32">
+        <footer className="w-full h-fit bg-[#141414] px-[30px] pt-6 pb-8 flex flex-col md:w-screen md:px-32 text-white">
             <div className="flex flex-col md:flex-row md:justify-between">
                 <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg" className='sm:w-[41px] sm:h-[44px] mb-8'>
                     <path d="M17.9766 0.252686V19.0221C17.9766 29.3893 9.92821 37.7924 0 37.7924V0.252686H17.9766Z" fill="white" />

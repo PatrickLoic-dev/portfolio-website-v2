@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 bg-black">
+    <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 bg-black text-white">
       <div>
       <h1 className="text-5xl proximaNovaBold uppercase md:text-6xl">
         Hi I&apos;m 
