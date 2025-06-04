@@ -1,6 +1,5 @@
 'use client';
 import { usePathname } from "next/navigation";
-import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@portfolio/components/header";
 import Footer from "@portfolio/components/footer";
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  var isVisible = false; 
+  let isVisible = false; 
   const pathname = usePathname();
 
   if ( pathname === "/about" || pathname === "/projects" ) {
@@ -26,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden">
+      <body className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden bg-black">
         <Header />
         {children}
         {isVisible && <Footer />}
