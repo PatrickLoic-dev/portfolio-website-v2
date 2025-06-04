@@ -1,6 +1,5 @@
 'use client';
 import { usePathname } from "next/navigation";
-import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@portfolio/components/header";
 import Footer from "@portfolio/components/footer";
@@ -12,8 +11,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  var isVisible = false; 
+  let isVisible = false;
   const pathname = usePathname();
 
   if ( pathname === "/about" || pathname === "/projects" ) {
