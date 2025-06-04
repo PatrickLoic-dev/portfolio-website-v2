@@ -6,6 +6,7 @@ import Header from "@portfolio/components/header";
 import Footer from "@portfolio/components/footer";
 
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
