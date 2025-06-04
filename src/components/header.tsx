@@ -1,8 +1,33 @@
+'use client';
+import React from 'react';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 function Header() {
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const currentScrollY = window.scrollY;
+    
+          if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            setShow(false); // Scrolling down
+          } else {
+            setShow(true); // Scrolling up
+          }
+    
+          setLastScrollY(currentScrollY);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, [lastScrollY]);
+
+
     return (
-        <div className=" w-full sm:w-[90%] md:w-[78%] py-[32px] px-[30px] bg-[#3d3d3d] flex items-center justify-between fixed">
+        <nav className={`w-screen sm:w-[90%] md:w-full md:px-32 py-[32px] px-[30px] flex items-center justify-between fixed z-50 transition-transform duration-300 ease-in-out ${show ? 'translate-y-0' : '-translate-y-full'}`}>
             <Link href="/">
                 <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg" className='sm:w-[41px] sm:h-[44px]'>
                     <path d="M17.9766 0.252686V19.0221C17.9766 29.3893 9.92821 37.7924 0 37.7924V0.252686H17.9766Z" fill="white" />
@@ -25,7 +50,7 @@ function Header() {
             </button>
         </div>
 
-        </div>
+        </nav>
     );
 }
 
