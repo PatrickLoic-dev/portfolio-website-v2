@@ -11,8 +11,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  let isVisible = false; 
+  let isVisible = false;
   const pathname = usePathname();
 
   if ( pathname === "/about" || pathname === "/projects" ) {
