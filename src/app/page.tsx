@@ -5,7 +5,7 @@ export default function Home() {
     <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32">
       <div>
       <h1 className="text-5xl proximaNovaBold uppercase md:text-6xl">
-        Hi I'm 
+        Hi I&apos;m 
         <br/>Patrick Loic
       </h1>
       <h2 className="text-[20px] proximaNovaRegular mt-2 md:text-3xl uppercase">

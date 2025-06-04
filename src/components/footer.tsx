@@ -10,7 +10,7 @@ function Footer() {
                     <path d="M36 37.7905C36 26.8996 27.93 18.0696 17.9766 18.0696V37.7905H36Z" fill="white" />
                 </svg>
                 <div className="flex flex-col gap-0.5 md:w-2/5">
-                    <h1 className="proximaNovaBold uppercase md:text-[32px]">Let's Chat</h1>
+                    <h1 className="proximaNovaBold uppercase md:text-[32px]">Let&apos;s Chat</h1>
                     <Link href="/contact" className="uppercase flex items-center gap-1 md:text-[32px] proximaNova md:gap-2.5">
                         Contact Me Here
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-5 md:h-5">
