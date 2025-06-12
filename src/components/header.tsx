@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import * as motion from "motion/react-client";
 
 function Header() {
     const [show, setShow] = useState(true);
@@ -39,10 +40,24 @@ function Header() {
                 </Link>
 
                 <div className="sm:flex items-center gap-8 uppercase">
-                    <Link href="/" className="menu-item hidden sm:hidden md:inline">Home</Link>
-                    <Link href="/about" className="menu-item hidden sm:hidden md:inline">About</Link>
-                    <Link href="/projects" className="menu-item hidden sm:hidden md:inline">Projects</Link>
-                    <Link href="/contact" className="menu-item hidden sm:hidden md:inline">Contact</Link>
+                    
+                    <motion.a href="/" className="menu-item hidden sm:hidden md:inline md:overflow-hidden md:h-fit"
+                    whileHover={{
+                        y: [null, 40, 0],
+                        transition : {
+                            duration : 1,
+                            times : [0, 0.6, 1],
+                            ease : ["easeInOut", "easeOut"]
+                        },
+                    }}
+                    transition={{
+                        duration: 0.3,
+                        ease: "easeOut",
+                    }}
+                    >Home</motion.a>
+                    <a href="/about" className="menu-item hidden sm:hidden md:inline">About</a>
+                    <a href="/projects" className="menu-item hidden sm:hidden md:inline">Projects</a>
+                    <a href="/contact" className="menu-item hidden sm:hidden md:inline">Contact</a>
                     <button className="md:hidden" onClick={() => setOpen(true)}>
                         <svg width="24" height="24" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 0.0204048C0.585786 0.0204048 0.25 0.356191 0.25 0.770405C0.25 1.18462 0.585786 1.5204 1 1.5204H15C15.4142 1.5204 15.75 1.18462 15.75 0.770405C15.75 0.356191 15.4142 0.0204048 15 0.0204048H1Z" fill="#FFFAFA" />

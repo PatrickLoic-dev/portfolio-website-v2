@@ -1,4 +1,48 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact | Portfolio de Patrick Loïc",
+    description: "Contactez moi, développeur créatif, pour discuter de vos idées, collaborations ou simplement dire bonjour. Découvrez comment entrer en contact avec lui.",
+    keywords: [
+        "Patrick Loïc contact",
+        "portfolio développeur",
+        "contact développeur web",
+        "collaboration numérique",
+        "développement web",
+        "React",
+        "Next.js",
+        "création digitale",
+        "expériences utilisateur"
+    ],
+    authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me/contact" }],
+    creator: "Patrick Loïc",
+    publisher: "Patrick Loïc",
+    robots: "index, follow",
+    openGraph: {
+        title: "Contact | Patrick Loïc – Portfolio de Développeur",
+        description: "Entrez en contact avec Patrick Loïc pour discuter de vos projets ou collaborations. Découvrez comment le joindre facilement.",
+        url: "https://kangueloic.me/contact",
+        siteName: "Portfolio Patrick Loïc",
+        type: "website",
+        locale: "fr_FR",
+        images: [
+            {
+                url: "../opengraph-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Vignette Contact – Patrick Loïc",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact | Patrick Loïc",
+        description: "Contactez Patrick Loïc pour discuter de vos idées ou collaborations. Découvrez ses coordonnées ici.",
+        creator: "@KewellLoic",
+        images: ["https://kangueloic.me/assets/twitter-contact.jpg"],
+    },
+};
 
 function Contact() {
     return (
@@ -21,7 +65,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-8 md:text-2xl md:gap-8 proximaNova w-full"> 
+                <div className="flex flex-col gap-8 md:text-2xl md:gap-8 proximaNova w-full">
                     <Link href="" className="flex justify-between items-center group">
                         LinkedIn
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-5 md:h-5 group-hover:rotate-45 transition delay-150 duration-300 ease-in-out">
