@@ -8,7 +8,7 @@ function About() {
                 <p className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From idea to execution, these are the projects where I applied my knowledge, learned new things, and helped bring meaningful results.</p>
             </section>
 
-            <section className="w-full h-full flex flex-col gap-12 mb-11">
+            <section className="w-full h-full flex flex-col gap-12 mb-11 md:gap-44">
                 <section className="md:flex md:w-full md:flex-row-reverse md:items-start md:gap-20">
 
                     <section className="w-full flex flex-col gap-2.5 justify-center items-center mb-12 md:text-[20px] md:items-start md:gap-5">
@@ -227,31 +227,31 @@ function About() {
                 </section>
 
                 <section className="flex flex-col items-center md:items-start md:w-full">
-                    <h1 className="proximaNovaBold uppercase md:text-5xl">My Experience</h1>
+                    <h1 className="proximaNovaBold uppercase md:text-5xl md:mb-10">My Experience</h1>
 
-                    <div className="uppercase flex flex-col gap-4.5 items-center text-center md:items-start md:text-left md:w-full">
+                    <div className="uppercase flex flex-col gap-4.5 items-center text-center md:items-start md:text-left md:w-full md:gap-20">
                         <div>
-                            <h1 className="proximaNovaBold">Digital consultant</h1>
-                            <h2 className="proximaNova">June 2021 - November 2022</h2>
-                            <h3 className="proximaNovaThin">Get Ready Digital Solutions</h3>
+                            <h1 className="proximaNovaBold md:text-[40px]">Digital consultant</h1>
+                            <h2 className="proximaNova md:text-4xl">June 2021 - November 2022</h2>
+                            <h3 className="proximaNovaThin md:text-[32px]">Get Ready Digital Solutions</h3>
                         </div>
-                        <div className="py-4.5 border-y-[0.25px] md:w-full">
-                            <h1 className="proximaNovaBold">Frontend development intern</h1>
-                            <h2 className="proximaNova">May 2023 - August 2023</h2>
-                            <h3 className="proximaNovaThin">One Touch labs</h3>
+                        <div className="py-4.5 border-y-[0.25px] md:w-full md:border-y-[1px] md:py-20">
+                            <h1 className="proximaNovaBold md:text-[40px]">Frontend development intern</h1>
+                            <h2 className="proximaNova md:text-4xl">May 2023 - August 2023</h2>
+                            <h3 className="proximaNovaThin md:text-[32px]">One Touch labs</h3>
                         </div>
                         <div>
-                            <h1 className="proximaNovaBold">Digital consultant</h1>
-                            <h2 className="proximaNova">October 2024 - March 2025</h2>
-                            <h3 className="proximaNovaThin">Londo technology</h3>
+                            <h1 className="proximaNovaBold md:text-[40px]">Digital consultant</h1>
+                            <h2 className="proximaNova md:text-4xl">October 2024 - March 2025</h2>
+                            <h3 className="proximaNovaThin md:text-[32px]">Londo technology</h3>
                         </div>
                     </div>
                 </section>
 
-                <button className="uppercase text-[10px] flex items-center justify-center bg-white/25 py-2 px-2 gap-2 proximaNova">
+                <button className="uppercase text-[10px] flex items-center justify-center bg-white/25 py-2 px-2 gap-2 proximaNova md:text-3xl md:gap-5 hover:bg-white hover:text-black text-white transition delay-150 duration-300 ease-in-out">
                     Download My resume
-                    <svg width="18" height="8" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-135">
-                        <path d="M13.2119 1.11842V10.9289C13.2119 11.079 13.1523 11.2229 13.0461 11.3291C12.94 11.4352 12.796 11.4949 12.6459 11.4949C12.4958 11.4949 12.3519 11.4352 12.2457 11.3291C12.1396 11.2229 12.0799 11.079 12.0799 10.9289V2.48622L0.967721 13.589C0.862644 13.6941 0.72013 13.7531 0.57153 13.7531C0.422929 13.7531 0.280415 13.6941 0.175338 13.589C0.0702618 13.4839 0.0112305 13.3414 0.0112305 13.1928C0.0112305 13.0442 0.0702618 12.9017 0.175338 12.7966L11.2781 1.6844H2.83548C2.68537 1.6844 2.54141 1.62477 2.43527 1.51863C2.32912 1.41249 2.26949 1.26853 2.26949 1.11842C2.26949 0.968308 2.32912 0.824346 2.43527 0.718203C2.54141 0.61206 2.68537 0.552429 2.83548 0.552429H12.6459C12.796 0.552429 12.94 0.61206 13.0461 0.718203C13.1523 0.824346 13.2119 0.968308 13.2119 1.11842Z" fill="white" />
+                    <svg width="18" height="8" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" className="rotate-135 md:h-[18px]">
+                        <path d="M13.2119 1.11842V10.9289C13.2119 11.079 13.1523 11.2229 13.0461 11.3291C12.94 11.4352 12.796 11.4949 12.6459 11.4949C12.4958 11.4949 12.3519 11.4352 12.2457 11.3291C12.1396 11.2229 12.0799 11.079 12.0799 10.9289V2.48622L0.967721 13.589C0.862644 13.6941 0.72013 13.7531 0.57153 13.7531C0.422929 13.7531 0.280415 13.6941 0.175338 13.589C0.0702618 13.4839 0.0112305 13.3414 0.0112305 13.1928C0.0112305 13.0442 0.0702618 12.9017 0.175338 12.7966L11.2781 1.6844H2.83548C2.68537 1.6844 2.54141 1.62477 2.43527 1.51863C2.32912 1.41249 2.26949 1.26853 2.26949 1.11842C2.26949 0.968308 2.32912 0.824346 2.43527 0.718203C2.54141 0.61206 2.68537 0.552429 2.83548 0.552429H12.6459C12.796 0.552429 12.94 0.61206 13.0461 0.718203C13.1523 0.824346 13.2119 0.968308 13.2119 1.11842Z" fill="white" className="fill-current"/>
                     </svg>
                 </button>
             </section>
