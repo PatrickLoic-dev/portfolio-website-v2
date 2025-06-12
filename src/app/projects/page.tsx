@@ -3,7 +3,7 @@ import ProjectComing from "@portfolio/components/Project cards/projectComing";
 
 function Projects() {
     return (
-        <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32">
+        <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 bg-black text-white">
             <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full">
                 <h1 className="text-5xl proximaNovaBold uppercase md:text-9xl">Projects</h1>
                 <p className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From idea to execution, these are the projects where I applied my knowledge, learned new things, and helped bring meaningful results.</p>

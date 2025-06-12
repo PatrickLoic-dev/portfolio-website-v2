@@ -8,7 +8,7 @@ interface ProjectCardProps {
   function ProjectCard({ reverse = false }: ProjectCardProps) {
 
     return (
-        <div className={`flex flex-col gap-6 md:flex-row md:gap-40 ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}`} >
+        <div className={`flex flex-col gap-6 md:flex-row md:gap-40 ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} text-white`} >
             <div className="w-full h-[220px] bg-cover bg-center rounded-[8px] flex items-end pl-4 pb-2 md:w-1/2 md:h-96 md:pl-9 md:pb-4" style={{ backgroundImage: "url('/Images/Other/Fictif project background.webp')" }}>
                 <button className='bg-[#FFFF]/25 size-9 flex justify-center items-center rounded-full md:size-16'>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-5 md:h-5">
