@@ -1,4 +1,49 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "À propos | Portfolio de Patrick Loïc",
+    description: "Découvrez Patrick Loïc, développeur créatif passionné par la création d'expériences numériques uniques. Apprenez-en plus sur son parcours, ses compétences et ses réalisations.",
+    keywords: [
+        "Patrick Loïc à propos",
+        "portfolio développeur",
+        "développeur créatif",
+        "expériences numériques",
+        "développement web",
+        "React",
+        "Next.js",
+        "compétences développeur",
+        "parcours professionnel"
+    ],
+    authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me/about" }],
+    creator: "Patrick Loïc",
+    publisher: "Patrick Loïc",
+    robots: "index, follow",
+    openGraph: {
+        title: "À propos | Patrick Loïc – Portfolio de Développeur",
+        description: "Découvrez le parcours et les compétences de Patrick Loïc, développeur créatif spécialisé dans la création d'expériences numériques immersives.",
+        url: "https://kangueloic.me/about",
+        siteName: "Portfolio Patrick Loïc",
+        type: "website",
+        locale: "fr_FR",
+        images: [
+            {
+                url: "../opengraph-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Vignette À propos – Patrick Loïc",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "À propos | Patrick Loïc",
+        description: "Découvrez le parcours et les compétences de Patrick Loïc, développeur créatif passionné par la création d'expériences numériques uniques.",
+        creator: "@KewellLoic",
+        images: ["https://kangueloic.me/assets/twitter-about.jpg"],
+    },
+};
 
 function About() {
     return (
@@ -12,14 +57,16 @@ function About() {
                 <section className="md:flex md:w-full md:flex-row-reverse md:items-start md:gap-20">
 
                     <section className="w-full flex flex-col gap-2.5 justify-center items-center mb-12 md:text-[20px] md:items-start md:gap-5">
-                        <div className="w-[183px] h-[153px] rounded-[8px] overflow-hidden md:w-[400px] md:h-[334px]">
+                        <motion.div className="w-[183px] h-[153px] rounded-[8px] overflow-hidden md:w-[400px] md:h-[334px]"
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}>
                             <Image
                                 src={"/Images/Other/Me.jpg"}
                                 alt={""}
                                 height={500}
                                 width={500}
                             />
-                        </div>
+                        </motion.div>
 
                         <article className="flex flex-col justify-center items-center md:items-start md:gap-1.5">
                             <p>Email</p>
@@ -33,12 +80,15 @@ function About() {
 
 
                     <section className="flex flex-col justify-center items-center gap-2.5 md:items-start md:gap-4">
-                        <h1 className="text-[20px] uppercase proximaNovaBold md:text-5xl">Hi, I’m patrick loic</h1>
-                        <p className="text-center text-[12px] md:text-left md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.
+                        <motion.h1 className="text-[20px] uppercase proximaNovaBold md:text-5xl"
+                            initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}>Hi, I’m patrick loic</motion.h1>
+                        <motion.p className="text-center text-[12px] md:text-left md:text-2xl" initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.
 
                             <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.
 
-                            <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. </p>
+                            <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. </motion.p>
                     </section>
                 </section>
 
@@ -251,7 +301,7 @@ function About() {
                 <button className="uppercase text-[10px] flex items-center justify-center bg-white/25 py-2 px-2 gap-2 proximaNova md:text-3xl md:gap-5 hover:bg-white hover:text-black text-white transition delay-150 duration-300 ease-in-out">
                     Download My resume
                     <svg width="18" height="8" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" className="rotate-135 md:h-[18px]">
-                        <path d="M13.2119 1.11842V10.9289C13.2119 11.079 13.1523 11.2229 13.0461 11.3291C12.94 11.4352 12.796 11.4949 12.6459 11.4949C12.4958 11.4949 12.3519 11.4352 12.2457 11.3291C12.1396 11.2229 12.0799 11.079 12.0799 10.9289V2.48622L0.967721 13.589C0.862644 13.6941 0.72013 13.7531 0.57153 13.7531C0.422929 13.7531 0.280415 13.6941 0.175338 13.589C0.0702618 13.4839 0.0112305 13.3414 0.0112305 13.1928C0.0112305 13.0442 0.0702618 12.9017 0.175338 12.7966L11.2781 1.6844H2.83548C2.68537 1.6844 2.54141 1.62477 2.43527 1.51863C2.32912 1.41249 2.26949 1.26853 2.26949 1.11842C2.26949 0.968308 2.32912 0.824346 2.43527 0.718203C2.54141 0.61206 2.68537 0.552429 2.83548 0.552429H12.6459C12.796 0.552429 12.94 0.61206 13.0461 0.718203C13.1523 0.824346 13.2119 0.968308 13.2119 1.11842Z" fill="white" className="fill-current"/>
+                        <path d="M13.2119 1.11842V10.9289C13.2119 11.079 13.1523 11.2229 13.0461 11.3291C12.94 11.4352 12.796 11.4949 12.6459 11.4949C12.4958 11.4949 12.3519 11.4352 12.2457 11.3291C12.1396 11.2229 12.0799 11.079 12.0799 10.9289V2.48622L0.967721 13.589C0.862644 13.6941 0.72013 13.7531 0.57153 13.7531C0.422929 13.7531 0.280415 13.6941 0.175338 13.589C0.0702618 13.4839 0.0112305 13.3414 0.0112305 13.1928C0.0112305 13.0442 0.0702618 12.9017 0.175338 12.7966L11.2781 1.6844H2.83548C2.68537 1.6844 2.54141 1.62477 2.43527 1.51863C2.32912 1.41249 2.26949 1.26853 2.26949 1.11842C2.26949 0.968308 2.32912 0.824346 2.43527 0.718203C2.54141 0.61206 2.68537 0.552429 2.83548 0.552429H12.6459C12.796 0.552429 12.94 0.61206 13.0461 0.718203C13.1523 0.824346 13.2119 0.968308 13.2119 1.11842Z" fill="white" className="fill-current" />
                     </svg>
                 </button>
             </section>
