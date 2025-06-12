@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: 'Proxima Nova Thin';
+  src: url('../../public/fonts/Proxima\ Nova\ Thin.otf');
+}
+
+@font-face {
   font-family: 'Proxima Nova Regular';
   src: url('../../public/fonts/ProximaNova-Regular.otf');
 }
@@ -52,6 +57,10 @@ body {
 
 .proximaNovaExtraBold {
   font-family: 'Proxima Nova ExtraBold', Arial, Helvetica, sans-serif;
+}
+
+.proximaNovaThin {
+  font-family: 'Proxima Nova Thin', Arial, Helvetica, sans-serif;
 }
 
 .menu-item {
