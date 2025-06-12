@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import * as motion from "motion/react-client";
 
 function Header() {
     const [show, setShow] = useState(true);
