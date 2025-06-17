@@ -62,7 +62,6 @@ export default function Home() {
         >
           A creative developer, that create experiences that are meant to be lived.
         </motion.h2>
-      </div>
     </div>
   );
 }
