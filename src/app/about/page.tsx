@@ -94,7 +94,7 @@ function About() {
 
                             <br /><br />I thrive in fast-paced environments where I can collaborate with others, exchange ideas, and build meaningful digital products. I believe good communication and a clear understanding of user needs are keys to creating software that has real impact.
 
-                            <br /><br />Outside of tech, I&apos;m someone who enjoys learning, sharing knowledge, and staying curious. I'm always seeking new challenges and I&apos;m not afraid to step out of my comfort zone to grow. Coding isn&apos;t just a job for me it&apos;s a passion I nurture every day.</motion.p>
+                            <br /><br />Outside of tech, I&apos;m someone who enjoys learning, sharing knowledge, and staying curious. I&apos;m always seeking new challenges and I&apos;m not afraid to step out of my comfort zone to grow. Coding isn&apos;t just a job for me it&apos;s a passion I nurture every day.</motion.p>
                     </section>
                 </section>
 
