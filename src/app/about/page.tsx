@@ -48,14 +48,6 @@ export const metadata: Metadata = {
 };
 
 function About() {
-    const downloadResume = () => {
-        const link = document.createElement("a");
-        link.href = "https://drive.google.com/file/d/1Uztk3k4s2UomOBekLor1sGIuPRkhx-fB/view?usp=drive_link"; // Chemin vers votre CV
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
 
     return (
         <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 flex flex-col proximaNova bg-black text-white">
@@ -95,14 +87,14 @@ function About() {
                         <motion.h1 className="text-[20px] uppercase proximaNovaBold md:text-5xl"
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}>Hi, I’m patrick loic</motion.h1>
+                            viewport={{ once: true }}>Hi, I&apos;m patrick loic</motion.h1>
                         <motion.p className="text-center text-[12px] md:text-left md:text-2xl"
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}>I&apos;m a fullstack developer with a strong interest in solving real-world problems throught clean and scalable code. I enjoy working on both the fronend and backend  sides of applications.
 
                             <br /><br />I thrive in fast-paced environments where I can collaborate with others, exchange ideas, and build meaningful digital products. I believe good communication and a clear understanding of user needs are keys to creating software that has real impact.
 
-                            <br /><br />Outside of tech, I&apos;m someone who enjoys learning, sharing knowledge, and staying curious. I'm always seeking new challenges and I&apos;m not afraid to step out of my comfort zone to grow. Coding isn&apos;t just a job for me it&apos;s a passion I nurture every day.</motion.p>
+                            <br /><br />Outside of tech, I&apos;m someone who enjoys learning, sharing knowledge, and staying curious. I&apos;m always seeking new challenges and I&apos;m not afraid to step out of my comfort zone to grow. Coding isn&apos;t just a job for me it&apos;s a passion I nurture every day.</motion.p>
                     </section>
                 </section>
 
