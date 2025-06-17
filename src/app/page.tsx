@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   title: "Patrick Loïc | Creative Developer Portfolio",
   description: "Découvrez Patrick Loïc, un développeur créatif spécialisé dans la création d’expériences numériques immersives et uniques. Portefeuille personnel, projets innovants et passion pour le code au service de l'expérience utilisateur.",
   keywords: [
-    "Patrick Loïc", 
-    "développeur créatif", 
-    "portfolio développeur", 
-    "expériences numériques", 
-    "développeur web", 
-    "développement frontend", 
-    "UX UI créatif", 
-    "développeur React", 
+    "Patrick Loïc",
+    "développeur créatif",
+    "portfolio développeur",
+    "expériences numériques",
+    "développeur web",
+    "développement frontend",
+    "UX UI créatif",
+    "développeur React",
     "développeur Next.js"
   ],
   authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me" }],
@@ -49,17 +49,19 @@ export default function Home() {
   return (
     <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 bg-black text-white">
       <div>
-      <motion.h1 
-      className="text-5xl proximaNovaBold uppercase md:text-6xl"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}>
-        Hi I&apos;m 
-        <br/>Patrick Loic
-      </motion.h1>
-      <h2 className="text-[20px] proximaNovaRegular mt-2 md:text-3xl uppercase">
-        A creative developer, that create experiences that are meant to be lived.
-      </h2>
-      </div>
+        <motion.h1
+          className="text-5xl proximaNovaBold uppercase md:text-6xl"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}>
+          Hi I&apos;m
+          <br />Patrick Loic
+        </motion.h1>
+        <motion.h2 className="text-[20px] proximaNovaRegular mt-2 md:text-3xl uppercase"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          A creative developer, that create experiences that are meant to be lived.
+        </motion.h2>
     </div>
   );
 }
