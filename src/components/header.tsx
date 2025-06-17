@@ -41,20 +41,7 @@ function Header() {
 
                 <div className="sm:flex items-center gap-8 uppercase">
                     
-                    <motion.a href="/" className="menu-item hidden sm:hidden md:inline md:overflow-hidden md:h-fit"
-                    whileHover={{
-                        y: [null, 40, 0],
-                        transition : {
-                            duration : 1,
-                            times : [0, 0.6, 1],
-                            ease : ["easeInOut", "easeOut"]
-                        },
-                    }}
-                    transition={{
-                        duration: 0.3,
-                        ease: "easeOut",
-                    }}
-                    >Home</motion.a>
+                    <motion.a href="/" className="menu-item hidden sm:hidden md:inline md:overflow-hidden md:h-fit">Home</motion.a>
                     <a href="/about" className="menu-item hidden sm:hidden md:inline">About</a>
                     <a href="/projects" className="menu-item hidden sm:hidden md:inline">Projects</a>
                     <a href="/contact" className="menu-item hidden sm:hidden md:inline">Contact</a>

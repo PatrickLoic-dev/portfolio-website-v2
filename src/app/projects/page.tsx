@@ -56,14 +56,20 @@ function Projects() {
             <section className="w-full h-full flex flex-col gap-5 mb-5 md:gap-44 md:mb-44">
                 <
                     ProjectCard 
+                    image={"/Images/Other/Fly banking image.jpg"}
+                    title={"Fly Banking"}
                     reverse={false}
                 />
                 <
                     ProjectCard 
+                    image={"/Images/Other/Click Cadyst image.jpg"}
+                    title={"Click Cadyst"}
                     reverse={true}
                 />
                 <
                     ProjectCard 
+                    image={"/Images/Other/Mon Panier image.jpg"}
+                    title={"Mon Panier"}
                     reverse={false}
                 />
             </section>
