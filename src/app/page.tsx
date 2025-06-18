@@ -65,7 +65,6 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}>
           A creative developer, that create experiences that are meant to be lived.
         </motion.h2>
-      </div>
     </div>
   );
 }
