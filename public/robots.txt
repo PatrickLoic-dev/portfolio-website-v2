@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+Disallow: /drafts
+
+# Host
+Host: https://www.kangueloic.me
+
+# Sitemaps
+Sitemap: https://www.kangueloic.me/sitemap.xml
