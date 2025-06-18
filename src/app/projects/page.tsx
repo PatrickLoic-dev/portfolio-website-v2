@@ -56,21 +56,35 @@ function Projects() {
             <section className="w-full h-full flex flex-col gap-5 mb-5 md:gap-44 md:mb-44">
                 <
                     ProjectCard 
+                    image={"/Images/Other/Fly banking image.jpg"}
+                    title={"Fly Banking"}
+                    description={"Developed a responsive web banking platform enabling users to manage accounts, perform transfers, and view transaction history abroad. My role involved building dynamic front-end interfaces and integrating secure backend services using Angular and NestJS."}
                     reverse={false}
+                    url={"https://flybanking.bicec.com/home"} 
+                    tags={["Angular", "NestJS"]}
                 />
                 <
                     ProjectCard 
+                    image={"/Images/Other/Click Cadyst image.jpg"}
+                    title={"Click Cadyst"}
+                    description={"Click CADYST is a mobile solution that digitizes the ordering process by allowing users to browse a product catalog, select multiple items, and choose a delivery location."}
                     reverse={true}
+                    url={"https://play.google.com/store/apps/details?id=com.clickcadyst.mobile&hl=fr&pli=1"} 
+                    tags={["Mobile", "Ionic"]}
                 />
                 <
                     ProjectCard 
+                    image={"/Images/Other/Mon Panier image.jpg"}
+                    title={"Mon Panier"}
+                    description={"Built a food marketplace allowing customers to browse, order, and pay for local products online. I contributed to implementing real-time order tracking, admin notifications, and an intuitive shopping experience on both web and mobile."}
                     reverse={false}
+                    url={"Not available"} 
+                    tags={["Angular", "NestJS"]}
                 />
             </section>
 
             <section className="w-full h-fit flex flex-col gap-5 mb-5 md:flex md:flex-row md:mb-16">
-                <ProjectComing />
-                <ProjectComing />
+                <ProjectComing image={"/Images/Other/mobile coming soon.jpg"}/> 
             </section>
         </div>
     );
