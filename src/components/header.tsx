@@ -40,7 +40,7 @@ function Header() {
                 </Link>
 
                 <div className="sm:flex items-center gap-8 uppercase">
-                    
+
                     <motion.a href="/" className="menu-item hidden sm:hidden md:inline md:overflow-hidden md:h-fit">Home</motion.a>
                     <a href="/about" className="menu-item hidden sm:hidden md:inline">About</a>
                     <a href="/projects" className="menu-item hidden sm:hidden md:inline">Projects</a>
@@ -74,10 +74,26 @@ function Header() {
                     </div>
 
                     <div className="flex flex-col gap-4 h-full justify-end text-black uppercase">
-                        <Link href="/" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}>Home</Link>
-                        <Link href="/about" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}>About</Link>
-                        <Link href="/projects" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}>Projects</Link>
-                        <Link href="/contact" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}>Contact</Link>
+                        <motion.a href="/" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
+                            initial={{ opacity: 0, y: -40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 }}>Home</motion.a>
+                        <motion.a href="/about" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
+                            initial={{ opacity: 0, y: -40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.3 }}>About</motion.a>
+                        <motion.a href="/projects" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
+                            initial={{ opacity: 0, y: -40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.4 }}>Projects</motion.a>
+                        <motion.a href="/contact" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
+                            initial={{ opacity: 0, y: -40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.5 }}>Contact</motion.a>
                     </div>
                 </div>
 

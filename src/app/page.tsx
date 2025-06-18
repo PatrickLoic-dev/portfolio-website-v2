@@ -51,15 +51,18 @@ export default function Home() {
       <div>
         <motion.h1
           className="text-5xl proximaNovaBold uppercase md:text-6xl"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}>
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}>
           Hi I&apos;m
           <br />Patrick Loic
         </motion.h1>
         <motion.h2 className="text-[20px] proximaNovaRegular mt-2 md:text-3xl uppercase"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-        >
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}>
           A creative developer, that create experiences that are meant to be lived.
         </motion.h2>
       </div>
