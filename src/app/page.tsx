@@ -2,10 +2,10 @@ import * as motion from "motion/react-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Patrick Loïc | Creative Developer Portfolio",
-  description: "Découvrez Patrick Loïc, un développeur créatif spécialisé dans la création d’expériences numériques immersives et uniques. Portefeuille personnel, projets innovants et passion pour le code au service de l'expérience utilisateur.",
+  title: "Kangue Loïc | Creative Developer Portfolio",
+  description: "Découvrez Kangue Loïc, un développeur créatif spécialisé dans la création d’expériences numériques immersives et uniques. Portefeuille personnel, projets innovants et passion pour le code au service de l'expérience utilisateur.",
   keywords: [
-    "Patrick Loïc",
+    "Kangue Loïc",
     "développeur créatif",
     "portfolio développeur",
     "expériences numériques",
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     "développeur React",
     "développeur Next.js"
   ],
-  authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me" }],
-  creator: "Patrick Loïc",
-  publisher: "Patrick Loïc",
+  authors: [{ name: "Kangue Loïc", url: "https://kangueloic.me" }],
+  creator: "Kangue Loïc",
+  publisher: "Kangue Loïc",
   robots: "index, follow",
   openGraph: {
-    title: "Patrick Loïc | Creative Developer Portfolio",
-    description: "Portfolio de Patrick Loïc, développeur web créatif. Création d'expériences digitales uniques et immersives. Découvrez mes projets.",
+    title: "Kangue Loïc | Creative Developer Portfolio",
+    description: "Portfolio de Kangue Loïc, développeur web créatif. Création d'expériences digitales uniques et immersives. Découvrez mes projets.",
     url: "https://kangueloic.me",
-    siteName: "Patrick Loïc | Portfolio",
+    siteName: "Kangue Loïc | Portfolio",
     type: "website",
     locale: "fr_FR",
     images: [
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
         url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Patrick Loïc - Développeur Créatif",
+        alt: "Kangue Loïc - Développeur Créatif",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Patrick Loïc | Creative Developer",
+    title: "Kangue Loïc | Creative Developer",
     description: "Développeur web créatif, spécialisé en expériences digitales immersives. Visitez mon portfolio.",
     creator: "@KewellLoic",
     images: ["https://kangueloic.me/twitter-card.jpg"],

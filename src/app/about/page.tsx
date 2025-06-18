@@ -4,10 +4,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "À propos | Portfolio de Patrick Loïc",
-    description: "Découvrez Patrick Loïc, développeur créatif passionné par la création d'expériences numériques uniques. Apprenez-en plus sur son parcours, ses compétences et ses réalisations.",
+    title: "À propos | Portfolio de Kangue Loïc",
+    description: "Découvrez Kangue Loïc, développeur créatif passionné par la création d'expériences numériques uniques. Apprenez-en plus sur son parcours, ses compétences et ses réalisations.",
     keywords: [
-        "Patrick Loïc à propos",
+        "Kangue Loïc à propos",
         "portfolio développeur",
         "développeur créatif",
         "expériences numériques",
@@ -17,15 +17,15 @@ export const metadata: Metadata = {
         "compétences développeur",
         "parcours professionnel"
     ],
-    authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me/about" }],
-    creator: "Patrick Loïc",
-    publisher: "Patrick Loïc",
+    authors: [{ name: "Kangue Loïc", url: "https://kangueloic.me/about" }],
+    creator: "Kangue Loïc",
+    publisher: "Kangue Loïc",
     robots: "index, follow",
     openGraph: {
-        title: "À propos | Patrick Loïc – Portfolio de Développeur",
-        description: "Découvrez le parcours et les compétences de Patrick Loïc, développeur créatif spécialisé dans la création d'expériences numériques immersives.",
+        title: "À propos | Kangue Loïc – Portfolio de Développeur",
+        description: "Découvrez le parcours et les compétences de Kangue Loïc, développeur créatif spécialisé dans la création d'expériences numériques immersives.",
         url: "https://kangueloic.me/about",
-        siteName: "Portfolio Patrick Loïc",
+        siteName: "Portfolio Kangue Loïc",
         type: "website",
         locale: "fr_FR",
         images: [
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
                 url: "../opengraph-image.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Vignette À propos – Patrick Loïc",
+                alt: "Vignette À propos – Kangue Loïc",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "À propos | Patrick Loïc",
-        description: "Découvrez le parcours et les compétences de Patrick Loïc, développeur créatif passionné par la création d'expériences numériques uniques.",
+        title: "À propos | Kangue Loïc",
+        description: "Découvrez le parcours et les compétences de Kangue Loïc, développeur créatif passionné par la création d'expériences numériques uniques.",
         creator: "@KewellLoic",
         images: ["https://kangueloic.me/assets/twitter-about.jpg"],
     },

@@ -3,10 +3,10 @@ import ProjectComing from "@portfolio/components/Project cards/projectComing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Projets | Portfolio de Patrick Loïc",
-    description: "Explorez les projets de Patrick Loïc, de la conception à l’exécution : réalisations innovantes, technologies utilisées et résultats concrets. Découvrez comment chaque projet lui a permis de développer de nouvelles compétences et d'apporter une valeur ajoutée.",
+    title: "Projets | Portfolio de Kangue Loïc",
+    description: "Explorez les projets de Kangue Loïc, de la conception à l’exécution : réalisations innovantes, technologies utilisées et résultats concrets. Découvrez comment chaque projet lui a permis de développer de nouvelles compétences et d'apporter une valeur ajoutée.",
     keywords: [
-      "Patrick Loïc projets",
+      "Kangue Loïc projets",
       "portfolio développeur",
       "réalisations numériques",
       "développement web",
@@ -16,15 +16,15 @@ export const metadata: Metadata = {
       "développement fullstack",
       "expériences utilisateur"
     ],
-    authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me/projects" }],
-    creator: "Patrick Loïc",
-    publisher: "Patrick Loïc",
+    authors: [{ name: "Kangue Loïc", url: "https://kangueloic.me/projects" }],
+    creator: "Kangue Loïc",
+    publisher: "Kangue Loïc",
     robots: "index, follow",
     openGraph: {
-      title: "Projets | Patrick Loïc – Portfolio de Développeur",
-      description: "Découvrez les projets sur lesquels Patrick Loïc a travaillé : idées originales, stack technique, et impact concret. Un aperçu de ses compétences en développement full-stack et UX.",
+      title: "Projets | Kangue Loïc – Portfolio de Développeur",
+      description: "Découvrez les projets sur lesquels Kangue Loïc a travaillé : idées originales, stack technique, et impact concret. Un aperçu de ses compétences en développement full-stack et UX.",
       url: "https://kangueloic.me/projects",
-      siteName: "Portfolio Patrick Loïc",
+      siteName: "Portfolio Kangue Loïc",
       type: "website",
       locale: "fr_FR",
       images: [
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
           url: "../opengraph-image.jpg",
           width: 1200,
           height: 630,
-          alt: "Vignette Projets – Patrick Loïc",
+          alt: "Vignette Projets – Kangue Loïc",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Projets | Patrick Loïc",
-      description: "Portefeuille de projets de Patrick Loïc : de l’idée au résultat, découvrez ses réalisations web innovantes.",
+      title: "Projets | Kangue Loïc",
+      description: "Portefeuille de projets de Kangue Loïc : de l’idée au résultat, découvrez ses réalisations web innovantes.",
       creator: "@tonPseudoTwitter",
       images: ["https://kangueloic.me/assets/twitter-projects.jpg"],
     },

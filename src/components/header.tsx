@@ -77,22 +77,22 @@ function Header() {
                         <motion.a href="/" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+
                             transition={{ duration: 0.5, delay: 0.2 }}>Home</motion.a>
                         <motion.a href="/about" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+
                             transition={{ duration: 0.5, delay: 0.3 }}>About</motion.a>
                         <motion.a href="/projects" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+
                             transition={{ duration: 0.5, delay: 0.4 }}>Projects</motion.a>
                         <motion.a href="/contact" className="proximaNovaExtraBold text-5xl" onClick={() => setOpen(false)}
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+
                             transition={{ duration: 0.5, delay: 0.5 }}>Contact</motion.a>
                     </div>
                 </div>

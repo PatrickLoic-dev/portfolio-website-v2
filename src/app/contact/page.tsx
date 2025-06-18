@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contact | Portfolio de Patrick Loïc",
+    title: "Contact | Portfolio de Kangue Loïc",
     description: "Contactez moi, développeur créatif, pour discuter de vos idées, collaborations ou simplement dire bonjour. Découvrez comment entrer en contact avec lui.",
     keywords: [
-        "Patrick Loïc contact",
+        "Kangue Loïc contact",
         "portfolio développeur",
         "contact développeur web",
         "collaboration numérique",
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
         "création digitale",
         "expériences utilisateur"
     ],
-    authors: [{ name: "Patrick Loïc", url: "https://kangueloic.me/contact" }],
-    creator: "Patrick Loïc",
-    publisher: "Patrick Loïc",
+    authors: [{ name: "Kangue Loïc", url: "https://kangueloic.me/contact" }],
+    creator: "Kangue Loïc",
+    publisher: "Kangue Loïc",
     robots: "index, follow",
     openGraph: {
-        title: "Contact | Patrick Loïc – Portfolio de Développeur",
-        description: "Entrez en contact avec Patrick Loïc pour discuter de vos projets ou collaborations. Découvrez comment le joindre facilement.",
+        title: "Contact | Kangue Loïc – Portfolio de Développeur",
+        description: "Entrez en contact avec Kangue Loïc pour discuter de vos projets ou collaborations. Découvrez comment le joindre facilement.",
         url: "https://kangueloic.me/contact",
-        siteName: "Portfolio Patrick Loïc",
+        siteName: "Portfolio Kangue Loïc",
         type: "website",
         locale: "fr_FR",
         images: [
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
                 url: "../opengraph-image.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Vignette Contact – Patrick Loïc",
+                alt: "Vignette Contact – Kangue Loïc",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Contact | Patrick Loïc",
-        description: "Contactez Patrick Loïc pour discuter de vos idées ou collaborations. Découvrez ses coordonnées ici.",
+        title: "Contact | Kangue Loïc",
+        description: "Contactez Kangue Loïc pour discuter de vos idées ou collaborations. Découvrez ses coordonnées ici.",
         creator: "@KewellLoic",
         images: ["https://kangueloic.me/assets/twitter-contact.jpg"],
     },
