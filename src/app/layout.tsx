@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="KgQth_q_JqNmZFssl4kCYoj6alUn5pHzh5RQzXw9YNM" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: `
         {
