@@ -53,7 +53,7 @@ export default function Home() {
       <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 text-white">
         <div>
           <motion.h1
-            className="text-5xl proximaNovaBold uppercase md:text-6xl"
+            className="text-5xl proximaNovaExtraBold uppercase md:text-6xl"
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
