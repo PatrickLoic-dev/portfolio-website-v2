@@ -1,3 +1,4 @@
+import VideoBackground from "@portfolio/components/videoBackground";
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 
@@ -47,25 +48,28 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 bg-black text-white">
-      <div>
-        <motion.h1
-          className="text-5xl proximaNovaBold uppercase md:text-6xl"
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}>
-          Hi I&apos;m
-          <br />Patrick Loic
-        </motion.h1>
-        <motion.h2 className="text-[20px] proximaNovaRegular mt-2 md:text-3xl uppercase"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}>
-          A creative developer, that create experiences that are meant to be lived.
-        </motion.h2>
-    </div>
-    </div>
+    <>
+      <VideoBackground />
+      <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 text-white">
+        <div>
+          <motion.h1
+            className="text-5xl proximaNovaBold uppercase md:text-6xl"
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}>
+            Hi I&apos;m
+            <br />Patrick Loic
+          </motion.h1>
+          <motion.h2 className="text-[20px] proximaNovaRegular mt-2 md:text-3xl uppercase"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}>
+            A creative developer, that create experiences that are meant to be lived.
+          </motion.h2>
+        </div>
+      </div>
+    </>
   );
 }

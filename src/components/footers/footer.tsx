@@ -1,6 +1,25 @@
+import { WeatherData, getDoualaWeather } from "@portfolio/lib/weatherApi";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+
 
 function Footer() {
+
+        const [weather, setWeather] = useState<WeatherData | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const apiKey = "046561d815b94bb6fcf7e0eb8ae63c1d" as string; // ⚠️ Visible in browser
+                const data = await getDoualaWeather(apiKey);
+                setWeather(data);
+            } catch (err) {
+                console.error("Error fetching weather:", err);
+            }
+        })();
+    }, []);
+
     return (
         <footer className="w-full h-fit bg-[#141414] px-[30px] pt-6 pb-8 flex flex-col md:w-screen md:px-32 text-white">
             <div className="flex flex-col md:flex-row md:justify-between">
@@ -60,8 +79,8 @@ function Footer() {
                     <p className="hidden md:inline">This website is genuine and product of my creativity</p>
                 </div>
                 <div className="flex flex-col gap-1.5">
-                    <p className="flex justify-center md:justify-end">Weather in Douala: Rain, 24.00°C</p>
-                    <p className="flex justify-center md:justify-end">Time in Douala: 00 : 30 PM</p>
+                    <p className="flex justify-center md:justify-end">Weather in Douala: {weather ? weather.condition : 'Loading...'}, {weather ? weather.temperature : 'Loading...'}</p>
+                    <p className="flex justify-center md:justify-end">Time in Douala: {weather?.time}</p>
                 </div>
 
 

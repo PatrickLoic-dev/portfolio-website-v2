@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import VideoBackground from "@portfolio/components/videoBackground";
 
 export const metadata: Metadata = {
     title: "Contact | Portfolio de Kangue Loïc",
@@ -46,8 +47,9 @@ export const metadata: Metadata = {
 
 function Contact() {
     return (
-        <div className="w-full h-fit flex flex-col sm:w-full px-[30px] md:px-32 overflow-hidden md:mb-17 bg-black text-white">
-
+        <>
+        <VideoBackground/>
+        <div className="w-full h-fit flex flex-col sm:w-full px-[30px] md:px-32 overflow-hidden   text-white">
             <section className="w-full h-fit text-white flex flex-col sm:w-full mb-4  mt-25">
                 <h1 className="text-4xl proximaNovaBold uppercase md:text-8xl md:mb-4">Get in touch !</h1>
                 <p className="text-[12px] proximaNova md:text-2xl md:w-[71%]">Get in touch with me so we could discuss any of your ideas or just say hello.</p>
@@ -93,6 +95,7 @@ function Contact() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 
