@@ -52,12 +52,13 @@ export default function Home() {
       <VideoBackground />
       <div className="w-full h-full py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 text-white">
         <div>
-          <motion.h1
-            className="text-5xl proximaNovaExtraBold uppercase md:text-6xl"
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}>
+            <motion.h1
+              initial={{ opacity: 0, y: -40 }}
+              animate={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-5xl proximaNovaExtraBold uppercase md:text-6xl"
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
             Hi I&apos;m
             <br />Patrick Loic
           </motion.h1>

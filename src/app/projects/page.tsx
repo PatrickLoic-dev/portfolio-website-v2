@@ -1,6 +1,7 @@
 import ProjectCard from "@portfolio/components/Project cards/projectCard";
 import ProjectComing from "@portfolio/components/Project cards/projectComing";
 import VideoBackground from "@portfolio/components/videoBackground";
+import * as motion from "motion/react-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -52,13 +53,22 @@ function Projects() {
       <VideoBackground />
       <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32  text-white">
         <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full">
-          <h1 className="text-5xl proximaNovaBold uppercase md:text-9xl">Projects</h1>
-          <p className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From idea to execution, these are the projects where I applied my knowledge, learned new things, and helped bring meaningful results.</p>
+          <motion.h1
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            className="text-5xl proximaNovaBold uppercase md:text-9xl">Projects</motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4  }}
+            className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From idea to execution, these are the projects where I applied my knowledge, learned new things, and helped bring meaningful results.</motion.p>
         </section>
 
         <section className="w-full h-full flex flex-col gap-5 mb-5 md:gap-44 md:mb-44 mt-9">
-          <
-            ProjectCard
+          <ProjectCard
             image={"/Images/Other/Fly banking image.jpg"}
             title={"Fly Banking"}
             description={"Developed a responsive web banking platform enabling users to manage accounts, perform transfers, and view transaction history abroad. My role involved building dynamic front-end interfaces and integrating secure backend services using Angular and NestJS."}
@@ -66,8 +76,7 @@ function Projects() {
             url={"https://flybanking.bicec.com/home"}
             tags={["Angular", "NestJS"]}
           />
-          <
-            ProjectCard
+          <ProjectCard
             image={"/Images/Other/Click Cadyst image.jpg"}
             title={"Click Cadyst"}
             description={"Click CADYST is a mobile solution that digitizes the ordering process by allowing users to browse a product catalog, select multiple items, and choose a delivery location."}
@@ -75,8 +84,7 @@ function Projects() {
             url={"https://play.google.com/store/apps/details?id=com.clickcadyst.mobile&hl=fr&pli=1"}
             tags={["Mobile", "Ionic"]}
           />
-          <
-            ProjectCard
+          <ProjectCard
             image={"/Images/Other/Mon Panier image.jpg"}
             title={"Mon Panier"}
             description={"Built a food marketplace allowing customers to browse, order, and pay for local products online. I contributed to implementing real-time order tracking, admin notifications, and an intuitive shopping experience on both web and mobile."}

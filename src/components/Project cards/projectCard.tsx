@@ -33,7 +33,7 @@ function ProjectCard({ reverse = false, image, title, description, tags, url }: 
                     transition={{ duration: 0.5, delay: 0.2 }}>
                     {title}
                 </motion.h1>
-                <motion.p className='hidden md:inline text-2xl proximaNova md:mb-4 md:text-left'
+                <motion.p className='hidden md:inline text-2xl proximaNova md:mb-4 md:text-justify'
                     initial={{ opacity: 0, y: -40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

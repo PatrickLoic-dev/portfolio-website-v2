@@ -55,8 +55,19 @@ function About() {
 
             <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 flex flex-col proximaNova  text-white">
                 <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full">
-                    <h1 className="text-5xl proximaNovaBold uppercase md:text-9xl">About</h1>
-                    <p className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From passion to expertise, this page showcases my journey, skills, and the experiences that shaped me as a developer.</p>
+                    <motion.h1
+                        initial={{ opacity: 0, y: -40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className="text-5xl proximaNovaBold uppercase md:text-9xl">
+                        About</motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From passion to expertise, this page showcases my journey, skills, and the experiences that shaped me as a developer.</motion.p>
                 </section>
 
                 <section className="w-full h-full flex flex-col gap-12 mb-11 md:gap-44">
@@ -103,7 +114,7 @@ function About() {
                         </section>
 
 
-                        <section className="flex flex-col justify-center items-center gap-2.5 md:items-start md:gap-4">
+                        <section className="flex flex-col justify-center items-center gap-2.5 md:items-start md:gap-4 md:mt-9">
                             <motion.h1 className="text-[20px] uppercase proximaNovaBold md:text-5xl"
                                 initial={{ opacity: 0, y: -40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
