@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 function Footer() {
 
-        const [weather, setWeather] = useState<WeatherData | null>(null);
+    const [weather, setWeather] = useState<WeatherData | null>(null);
 
     useEffect(() => {
         (async () => {
@@ -37,11 +37,22 @@ function Footer() {
                         </svg>
                     </Link>
                     <div className="flex flex-row gap-1 mt-2 mb-8 justify-between md:gap-40">
-                        <div className="hidden uppercase  md:flex md:flex-col md:text-2xl md:gap-2 proximaNova">
-                            <Link href="/">Home</Link>
-                            <Link href="/about">About</Link>
-                            <Link href="/projects">Projects</Link>
-                            <Link href="/contact">Contact</Link>
+                        <div className="hidden uppercase md:flex md:flex-col md:text-2xl md:gap-2 proximaNova">
+                            {[
+                                { href: "/", label: "Home" },
+                                { href: "/about", label: "About" },
+                                { href: "/projects", label: "Projects" },
+                                { href: "/contact", label: "Contact" },
+                            ].map(({ href, label }) => (
+                                <Link
+                                    key={href}
+                                    href={href}
+                                    className="relative group"
+                                >
+                                    {label}
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                            ))}
                         </div>
                         <div className="flex flex-col gap-1 md:text-2xl md:gap-3.5 proximaNova md:w-3/5 w-full">
                             <Link href="https://www.linkedin.com/in/patrick-loic-kangue-kwelle/" className="flex justify-between items-center group">

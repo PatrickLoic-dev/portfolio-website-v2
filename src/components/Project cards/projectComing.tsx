@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 function ProjectComing({ image }: ProjectCardProps) {
     return (
-        <motion.div className="w-full h-[220px] bg-cover bg-center rounded-[8px] flex items-end pl-4 pb-2 md:h-96 md:pl-9 md:pb-4 text-white before:bg-black/20 " style={{ backgroundImage: `url("${image} ")` }}
+        <motion.div className="w-full h-[220px] bg-cover bg-center rounded-[8px] flex items-end pl-4 pb-2 md:h-96 md:pl-9 md:pb-4 text-white  " style={{ backgroundImage: `url("${image} ")` }}
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
