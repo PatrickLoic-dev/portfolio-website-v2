@@ -53,7 +53,7 @@ function About() {
         <>
             <VideoBackground />
 
-            <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 flex flex-col proximaNova  text-white">
+            <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 flex flex-col proximaNova  text-white relative">
                 <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full">
                     <motion.h1
                         initial={{ opacity: 0, y: -40 }}
@@ -93,11 +93,11 @@ function About() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.5, delay: 0.2 }}>Email</motion.p>
-                                <motion.p
+                                <motion.a
                                     initial={{ opacity: 0, y: -40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ duration: 0.5, delay: 0.2 }}>contact@kangueloic.me</motion.p>
+                                    transition={{ duration: 0.5, delay: 0.2 }} href="mailto:kangueloic9@gmail.com" className="relative group">contact@kangueloic.me <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span></motion.a>
                             </article>
                             <article className="flex flex-col justify-center items-center md:items-start md:gap-1.5">
                                 <motion.p

@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 function Tag({ tag }: ProjectCardProps) {
     return (
-        <motion.div className="w-[60px] h-[14px] bg-[#FFFFFF]/25 overflow-hidden flex justify-center items-center text-[10px] proximaNovaBold rounded-[2px] md:w-[164px] md:h-9 md:text-[20px] md:rounded-[6px] md:gap-6 text-white"
+        <motion.div className="w-fit h-[14px] bg-[#FFFFFF]/25 px-2.5 py-1 overflow-hidden flex justify-center items-center text-[10px] proximaNovaBold rounded-[2px] md:w-[164px] md:h-9 md:text-[20px] md:rounded-[6px] md:gap-6 text-white"
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

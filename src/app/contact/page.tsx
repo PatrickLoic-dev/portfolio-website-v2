@@ -65,7 +65,10 @@ function Contact() {
                     <div className="mb-4 flex flex-col gap-5 md:w-4/2">
                         <div className="w-full h-fit text-white flex flex-col sm:w-full">
                             <h1 className="text-[22px] proximaNovaBold uppercase md:text-3xl">Email Me</h1>
-                            <Link href="mailto:contact@kangueloic.me" className="text-[22px] proximaNova md:text-2xl md:w-[71%]">contact@kangueloic.me</Link>
+                            <Link href="mailto:kangueloic9@gmail.com" className="text-[22px] proximaNova md:text-2xl md:w-[71%] relative group">
+                                contact@kangueloic.me
+                                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[54%]"></span>
+                            </Link>
                         </div>
                         <div className="w-full h-fit text-white flex flex-col sm:w-full md:mt-25">
                             <h1 className="text-[22px] proximaNovaBold uppercase md:text-4xl">Address</h1>

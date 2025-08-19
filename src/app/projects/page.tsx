@@ -94,7 +94,7 @@ function Projects() {
           />
           <ProjectCard
             image={"/Images/Other/Asante Artsy image.jpg"}
-            title={"Mon Panier"}
+            title={"Asante Artsy - Showcase website"}
             description={"So this is a project I worked on with the architectural cabinet Asante Artsy, where I was responsible for the front-end development of their website, which showcases their architectural projects and services."}
             reverse={true}
             url={"https://asanteartsy.vercel.app"}
