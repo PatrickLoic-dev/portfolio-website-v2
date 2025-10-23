@@ -79,11 +79,13 @@ export default function RootLayout({
         }
         ` }} />
       </head>
-      <body className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden bg-black text-white">
-        <Header />
-        {children}
-        {isFooterVisible && <PartialFooter />}
-        {isVisible && <Footer />}
+      <body>
+        <div className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden bg-black text-white">
+          <Header />
+          {children}
+          {isFooterVisible && <PartialFooter />}
+          {isVisible && <Footer />}
+        </div>
       </body>
     </html>
   );
