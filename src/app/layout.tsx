@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import Header from "@portfolio/components/header";
 import Footer from "@portfolio/components/footers/footer";
-import PartialFooter from "@portfolio/components/footers/partialFooter";4
+import PartialFooter from "@portfolio/components/footers/partialFooter";
 
 
 
