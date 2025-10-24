@@ -51,20 +51,20 @@ function Projects() {
   return (
     <>
       <VideoBackground />
-      <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32  text-white">
-        <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full">
+      <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 bg-black text-white">
+        <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full z-10">
           <motion.h1
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="text-5xl proximaNovaBold uppercase md:text-9xl">Projects</motion.h1>
+            className="text-5xl proximaNovaBold uppercase md:text-9xl z-10">Projects</motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4  }}
-            className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%]">From idea to execution, these are the projects where I applied my knowledge, learned new things, and helped bring meaningful results.</motion.p>
+            className="text-[12px] text-center proximaNova uppercase md:text-3xl md:w-[71%] z-10">From idea to execution, these are the projects where I applied my knowledge, learned new things, and helped bring meaningful results.</motion.p>
         </section>
 
         <section className="w-full h-full flex flex-col gap-5 mb-5 md:gap-44 md:mb-44 mt-9">

@@ -50,7 +50,7 @@ function Contact() {
     return (
         <>
             <VideoBackground />
-            <div className="w-full h-fit flex flex-col sm:w-full px-[30px] md:px-32 overflow-hidden   text-white">
+            <div className="w-full h-fit flex flex-col sm:w-full px-[30px] md:px-32 overflow-hidden text-white z-10">
                 <section className="w-full h-fit text-white flex flex-col sm:w-full mb-4  mt-25">
                     <motion.h1
                         initial={{ opacity: 0, y: -40 }}
@@ -61,7 +61,7 @@ function Contact() {
                     <p className="text-[12px] proximaNova md:text-2xl md:w-[71%]">Get in touch with me so we could discuss any of your ideas or just say hello.</p>
                 </section>
 
-                <div className="md:flex md:justify-between md:items-center md:w-4/5 md:mt-15">
+                <div className="md:flex md:justify-between md:items-center md:w-4/5 md:mt-15 z-10">
                     <div className="mb-4 flex flex-col gap-5 md:w-4/2">
                         <div className="w-full h-fit text-white flex flex-col sm:w-full">
                             <h1 className="text-[22px] proximaNovaBold uppercase md:text-3xl">Email Me</h1>
