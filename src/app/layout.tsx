@@ -1,9 +1,11 @@
 'use client';
 import { usePathname } from "next/navigation";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+
 import Header from "@portfolio/components/header";
 import Footer from "@portfolio/components/footers/footer";
-import PartialFooter from "@portfolio/components/footers/partialFooter";
+import PartialFooter from "@portfolio/components/footers/partialFooter";4
 
 
 
@@ -80,6 +82,7 @@ export default function RootLayout({
         ` }} />
       </head>
       <body>
+      <Analytics/>
         <div className="w-screen h-[100vh] sm:w-[100%] md:h-[100vh] overflow-x-hidden bg-black text-white">
           <Header />
           {children}
