@@ -53,7 +53,7 @@ function About() {
         <>
             <VideoBackground />
 
-            <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 flex flex-col proximaNova  text-white relative">
+            <div className="w-full h-fit sm:w-full px-[30px] overflow-hidden md:px-32 flex flex-col proximaNova  bg-black  text-white relative">
                 <section className="w-full h-screen text-white flex flex-col justify-center items-center sm:w-full">
                     <motion.h1
                         initial={{ opacity: 0, y: -40 }}
