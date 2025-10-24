@@ -51,7 +51,7 @@ export default function Home() {
     <>
       <VideoBackground />
       <div className="w-full h-dvh py-[32px] px-[30px] flex flex-col justify-end sm:w-full md:px-32 text-white">
-        <div>
+        <div className="z-10">
             <motion.h1
               initial={{ opacity: 0, y: -40 }}
               animate={{ opacity: 1, y: 0 }}
