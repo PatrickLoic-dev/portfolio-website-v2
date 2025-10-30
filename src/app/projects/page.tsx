@@ -110,7 +110,7 @@ function Projects() {
           />
           <ProjectCard
             image={"/Images/Other/KSA Glamour.jpg"}
-            title={"Asante Artsy - Showcase website"}
+            title={"KSA Glamour - Showcase website"}
             description={"This is a showcase website I developed for KSA Glamour, a company specializing in luxury fashion and accessories. My role was to create an elegant and user-friendly interface that highlights their exclusive products and brand identity."}
             reverse={true}
             url={"https://ksa-glamour.vercel.app"}
@@ -118,7 +118,7 @@ function Projects() {
           />
           <ProjectCard
             image={"/Images/Other/Tekken Graph.jpg"}
-            title={"Asante Artsy - Showcase website"}
+            title={"Tekken Mboa - Community Website"}
             description={"This is a community website I developed for the Cameroonian Tekken community, where players can find information about tournaments, rankings, and connect with other Tekken enthusiasts."}
             reverse={false}
             url={"https://tekken-mboa.vercel.app"}
