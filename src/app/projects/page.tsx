@@ -100,6 +100,30 @@ function Projects() {
             url={"https://asanteartsy.vercel.app"}
             tags={["Next.Js", "Web Design", "Professional"]}
           />
+          <ProjectCard
+            image={"/Images/Other/Jaec Agro.jpg"}
+            title={"Jaec Agro - Catalogue Website"}
+            description={"I developed a catalogue website for the JAEC Agronomic Group to showcase their agricultural products and services. The platform highlights their expertise in agronomy and provides an easy-to-navigate interface for potential clients to explore their offerings."}
+            reverse={false}
+            url={"https://jaec-agro.vercel.app"}
+            tags={["Next.Js", "Web Design", "Professional"]}
+          />
+          <ProjectCard
+            image={"/Images/Other/KSA Glamour.jpg"}
+            title={"Asante Artsy - Showcase website"}
+            description={"This is a showcase website I developed for KSA Glamour, a company specializing in luxury fashion and accessories. My role was to create an elegant and user-friendly interface that highlights their exclusive products and brand identity."}
+            reverse={true}
+            url={"https://ksa-glamour.vercel.app"}
+            tags={["Next.Js", "Web Design", "Professional"]}
+          />
+          <ProjectCard
+            image={"/Images/Other/Tekken Graph.jpg"}
+            title={"Asante Artsy - Showcase website"}
+            description={"This is a community website I developed for the Cameroonian Tekken community, where players can find information about tournaments, rankings, and connect with other Tekken enthusiasts."}
+            reverse={false}
+            url={"https://tekken-mboa.vercel.app"}
+            tags={["Next.Js", "Web Design", "Community"]}
+          />
         </section>
 
         <section className="w-full h-fit flex flex-col gap-5 mb-5 md:flex md:flex-row md:mb-16">

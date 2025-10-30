@@ -14,7 +14,7 @@ function ProjectCard({ reverse = false, image, title, description, tags, url }: 
 
     return (
         <div className={`flex flex-col gap-6 md:w-full md:justify-between ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} text-white `} >
-            <motion.a href={url} className="w-full h-[220px] bg-cover bg-center rounded-[8px] flex items-end pl-4 pb-2 md:w-3/5 md:h-96 md:pl-9 md:pb-4 group cursor-pointer" style={{ backgroundImage: `url("${image}")` }}
+            <motion.a href={url} target="_blank" className="w-full h-[220px] bg-cover bg-center rounded-[8px] flex items-end pl-4 pb-2 md:w-3/5 md:h-96 md:pl-9 md:pb-4 group cursor-pointer" style={{ backgroundImage: `url("${image}")` }}
                 initial={{ opacity: 0, y: -40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
