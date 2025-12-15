@@ -20,7 +20,7 @@ function PartialFooter() {
     }, []);
 
     return (
-        <footer className="flex flex-col justify-center text-[12px] gap-1.5 md:flex-row md:justify-between md:text-[20px] proximaNova px-[30px] md:px-32 pt-6 pb-8">
+        <footer className="fixed flex flex-col justify-center text-[12px] gap-1.5 md:flex-row md:justify-between md:text-[20px] proximaNova px-[30px] md:px-32 pt-6 pb-8  z-1000 text-white w-full">
             <div className="md:flex md:flex-col">
                 <p className="flex justify-center uppercase md:justify-start">© 2025 kangue kwelle patrick loic</p>
                 <p className="hidden md:inline">This website is genuine and product of my creativity</p>

@@ -127,7 +127,7 @@ function Projects() {
         </section>
 
         <section className="w-full h-fit flex flex-col gap-5 mb-5 md:flex md:flex-row md:mb-16">
-          <ProjectComing image={"/Images/Other/LinkUp Image.jpg"} />
+          <ProjectComing image={"/Images/Other/Hitch Image.jpg"} />
         </section>
       </div>
     </>

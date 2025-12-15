@@ -50,7 +50,7 @@ function Contact() {
     return (
         <>
             <VideoBackground />
-            <div className="w-full h-fit flex flex-col sm:w-full px-[30px] md:px-32 overflow-hidden text-white z-10">
+            <div className="w-full h-[85%] flex flex-col sm:w-full px-[30px] md:px-32 overflow-hidden text-white z-10">
                 <section className="w-full h-fit text-white flex flex-col sm:w-full mb-4  mt-25">
                     <motion.h1
                         initial={{ opacity: 0, y: -40 }}
@@ -65,11 +65,12 @@ function Contact() {
                     <div className="mb-4 flex flex-col gap-5 md:w-4/2">
                         <div className="w-full h-fit text-white flex flex-col sm:w-full">
                             <h1 className="text-[22px] proximaNovaBold uppercase md:text-3xl">Email Me</h1>
-                            <Link href="mailto:kangueloic9@gmail.com" className="text-[22px] proximaNova md:text-2xl md:w-[71%] relative group">
-                                contact@kangueloic.me
+                            <Link href="mailto:kangueloic9@gmail.com" className="text-[22px] proximaNova md:text-2xl md:w-[55%] relative group">
+                                kangueloic9@gmail.com
                                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[54%]"></span>
                             </Link>
                         </div>
+                        
                         <div className="w-full h-fit text-white flex flex-col sm:w-full md:mt-25">
                             <h1 className="text-[22px] proximaNovaBold uppercase md:text-4xl">Address</h1>
                             <p className="text-[22px] proximaNova flex md:text-3xl md:w-[71%]">Douala,Cameroon</p>
