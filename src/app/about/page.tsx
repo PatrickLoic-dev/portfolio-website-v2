@@ -3,7 +3,7 @@ import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Link from "next/link";
 import VideoBackground from "@portfolio/components/videoBackground";
-import { useState } from "react";
+
 
 export const metadata: Metadata = {
     title: "À propos | Portfolio de Kangue Loïc",
@@ -50,33 +50,6 @@ export const metadata: Metadata = {
 
 function About() {
 
-    const [hoveredTech, setHoveredTech] = useState<string | null>(null);
-
-    const TechIcon = ({ children, name, delay = 0.2 }: { children: React.ReactNode, name: string, delay?: number }) => (
-        <motion.div
-            className="relative"
-            initial={{ opacity: 0, y: -40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay }}
-            onMouseEnter={() => setHoveredTech(name)}
-            onMouseLeave={() => setHoveredTech(null)}
-        >
-            {children}
-            {hoveredTech === name && (
-                <motion.div
-                    className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black/80 text-white px-2 py-1 rounded text-sm whitespace-nowrap z-10"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{ duration: 0.2 }}
-                >
-                    {name}
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/80"></div>
-                </motion.div>
-            )}
-        </motion.div>
-    );
 
     return (
         <>
